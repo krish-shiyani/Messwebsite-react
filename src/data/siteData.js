@@ -35,6 +35,7 @@ export const LEADERSHIP = [
     photo: "images/coordinator.webp",
   },
   
+  
 ]
 
 export const COMMITTEE = [
@@ -43,6 +44,12 @@ export const COMMITTEE = [
     role: 'Mess Coordinator',
     email: 'messcoordinator@iitbhilai.ac.in',
     photo: "images/coordinator.webp",
+  },
+  {
+    name: 'Sanjay Kumar Verma',
+    role: 'Mess Coordinator',
+    email: 'messscoordinator@iitbhilai.ac.in',
+    photo: "images/sanjay.webp",
   },
   {
     name: 'Sudhanshu Mishra',
@@ -111,11 +118,7 @@ export const COMMITTEE = [
     role: 'Member',
     photo: "images/sadhana.webp",
   },
-  {
-    name: 'Sanjay Kumar Verma',
-    role: 'Member',
-    photo: "images/sanjay.webp",
-  },
+  
   {
     name: 'Akash Netam',
     role: 'Member',

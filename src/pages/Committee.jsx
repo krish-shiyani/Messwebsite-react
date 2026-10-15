@@ -36,7 +36,8 @@ function TierLabel({ emoji, label }) {
 }
 
 export default function Committee() {
-  const [coordinator, ...members] = COMMITTEE
+  const coordinators = COMMITTEE.slice(0, 2)
+  const members = COMMITTEE.slice(2)
 
   return (
     <div className="space-y-10">
@@ -50,9 +51,11 @@ export default function Committee() {
       
 
       <TierLabel emoji="🎓" label="Coordinator" />
-      {/* Coordinator — on top, biggest */}
-      <div className="mx-auto max-w-sm">
-        <MemberCard member={coordinator} index={0} size="w-40 h-40" textSize="text-4xl" />
+      {/* Coordinators — on top, biggest */}
+      <div className="mx-auto grid max-w-2xl grid-cols-1 gap-4 sm:grid-cols-2">
+        {coordinators.map((member, i) => (
+          <MemberCard key={member.name} member={member} index={i} size="w-40 h-40" textSize="text-4xl" />
+        ))}
       </div>
 
       <TierLabel emoji="🎓" label="Mess In-Charge" />
